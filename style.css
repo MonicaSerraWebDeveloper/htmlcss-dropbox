@@ -8,6 +8,122 @@
     box-sizing: border-box;
 }
 
+img {
+    max-width: 100%;
+}
+
 /*-------------------
         GENERAL
 ---------------------*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #fff;
+}
+
+/*-------------------
+        LAYOUT
+---------------------*/
+
+.container-header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+/*-------------------
+        TYPOGRAPHY
+---------------------*/
+
+li a {
+    font-size: 12px;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+/*-------------------
+        BUTTONS
+---------------------*/
+
+.btn-primary {
+    font-size: 13px;
+    padding: 6px 10px;
+    color: #fff;
+    border: 1px solid #0061ff;
+    background-color: #0061ff;
+    cursor: pointer;
+}
+
+.btn-small {
+    font-size: 12px;
+    font-weight: 300;
+    padding: 4px 10px;
+    color: #fff;
+    border: 1px solid #0061ff;
+    background-color: #0061ff;
+    cursor: pointer;
+}
+
+.btn-secondary {
+    font-size: 13px;
+    font-weight: 300;
+    padding: 6px 10px;
+    color: #4f4f4f;
+    border: 1px solid #4f4f4f;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+/*-------------------
+        HEADER
+---------------------*/
+
+header {
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;;
+}
+
+.container-header .row {
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu nav ul {
+    display: flex;
+    list-style: none;
+
+}
+
+.menu nav a {
+    color: #000;
+}
+
+.menu nav ul li {
+    padding: 15px;
+}
+
+.menu nav ul li a:hover {
+    border-bottom: 2px solid #000;
+    padding-bottom: 15px;
+}
+
+
+.logo-img {
+    height: 20px;
+}
+
+
+
+

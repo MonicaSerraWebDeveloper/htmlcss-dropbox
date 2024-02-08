@@ -39,9 +39,29 @@ body {
     margin-right: -10px;
 }
 
+.col-30 {
+    width: 30%;
+}
+
+.col-70 {
+    width: 70%;
+}
+
+
 /*-------------------
         TYPOGRAPHY
 ---------------------*/
+
+h1 {
+    font-size: 65px;
+    line-height: 70px;
+    padding: 60px 0;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+}
 
 li a {
     font-size: 12px;
@@ -103,7 +123,6 @@ header {
 .menu nav ul {
     display: flex;
     list-style: none;
-
 }
 
 .menu nav a {
@@ -119,11 +138,49 @@ header {
     padding-bottom: 15px;
 }
 
-
 .logo-img {
     height: 20px;
 }
 
+/*-------------------
+        HERO
+---------------------*/
 
+.main-background {
+    background-color: #b4d0e7;
+}
 
+.container-hero {
+    max-width: 993px;
+    margin: 0 auto;
+}
+
+.container-content {
+    width: 100%;
+    display: flex;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.arrow-container {
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.fa-arrow-down {
+    font-size: 40px
+}
+
+.col-70 img {
+    margin-bottom: -300px;
+}
+
+/*-------------------
+        CONTENT
+---------------------*/
 

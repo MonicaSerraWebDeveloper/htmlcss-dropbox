@@ -19,7 +19,7 @@ img {
 body {
     font-family: 'Open Sans', sans-serif;
     background-color: #fff;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 300;
 }
 
@@ -65,12 +65,12 @@ h1 {
 }
 
 h2 {
-    font-size: 28px;
+    font-size: 40px;
     padding-bottom: 40px;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 26px;
     padding-bottom: 12px;
 }
 
@@ -80,7 +80,7 @@ p {
 }
 
 li a {
-    font-size: 12px;
+    font-size: 14px;
     text-decoration: none;
     font-weight: 300;
 }
@@ -95,7 +95,7 @@ ul li {
 ---------------------*/
 
 .btn-primary {
-    font-size: 12px;
+    font-size: 14px;
     padding: 8px 12px;
     color: #fff;
     border: 1px solid #0061ff;
@@ -114,7 +114,7 @@ ul li {
 }
 
 .btn-secondary {
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 300;
     padding: 6px 10px;
     color: #4f4f4f;

@@ -23,6 +23,11 @@ body {
     font-weight: 300;
 }
 
+hr {
+    width: 20%;
+    color: #ddd;
+}
+
 /*-------------------
         LAYOUT
 ---------------------*/
@@ -56,6 +61,10 @@ body {
 .col-70 {
     width: 70%;
 }
+
+.col-100 {
+    width: 100%;
+} 
 
 
 /*-------------------
@@ -133,7 +142,7 @@ ul li {
 
 header {
     background-color: #fff;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .container-header .row {
@@ -288,10 +297,6 @@ small {
     padding: 40px 0;
 }
 
-.content-box hr {
-    width: 20%;   
-}
-
 .list-check {
     padding-top: 40px;
 }
@@ -334,6 +339,100 @@ small {
 
 .grid-column {
     flex-direction: column;
+}
+
+/*-------------------
+        BRAND GRID
+---------------------*/
+
+.row-brand-container {
+    display: flex;
+    min-height: 32vw;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+}
+
+.box-logo-container {
+    display: flex;
+    flex-direction: column;
+    width: calc(33vw / 50vw);
+    min-height: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-logo {
+    width: 6vw;
+    filter: invert(100%);
+}
+
+.central-col {
+    padding: 4vw;
+    overflow-y: auto;
+}    
+
+.central-col .text-container-hero > * {
+    font-size: 1vw;
+}
+
+.center-brand {
+    height: 4vw;
+}
+
+/*-------------------
+    GRID COLOR
+---------------------*/
+
+.left-side-top-left {
+    background-color: #a2d39b;
+    border: 10px solid #d1e9cd;
+}
+
+.left-side-bottom-left {
+    background-color: #0093ce;
+}
+
+.left-side-top-right {
+    background-color: #61082b;
+}
+
+.left-side-bottom-right {
+    background-color: #ff1c1c;
+}
+
+.right-side-top-left {
+    background-color: #d5001f;
+}
+
+.right-side-bottom-left {
+    background-color: #0d2481;
+}
+
+.right-side-top-right {
+    background-color: #b4d0e7;
+}
+
+.right-side-bottom-right {
+    background-color: #ffd830;
+}
+
+.central-col {
+    background-color: #f5f5f5;
+}
+
+.box-logo {
+    color: #fff;
+}
+
+figcaption {
+    font-size: 14px;
 }
 
 /*-------------------

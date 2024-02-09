@@ -49,6 +49,10 @@ body {
     width: calc(100% / 3);
 }
 
+.col-50 {
+    width: 50%;
+}
+
 .col-70 {
     width: 70%;
 }

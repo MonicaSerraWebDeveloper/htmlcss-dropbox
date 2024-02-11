@@ -107,6 +107,10 @@ h3 {
     padding-bottom: 12px;
 }
 
+h4 {
+    font-size: 14px;
+}
+
 p {
     font-size: 14px;
     font-weight: 300;
@@ -481,6 +485,23 @@ figcaption {
     align-items: baseline;
 }
 
+/*-------------------
+        FAQ
+---------------------*/
+
+.accordion {
+    border-top: 1px solid #999999;
+    border-bottom: 1px solid #999999;
+    padding: 35px 0;
+}
+
+.icon-accordion {
+    padding: 0 30px;
+}
+
+.fa-angle-down {
+    font-size: 12px;
+}
 
 /*-------------------
         DEBUG

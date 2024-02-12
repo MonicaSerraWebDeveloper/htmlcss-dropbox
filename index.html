@@ -20,20 +20,20 @@
     <!-- Menu Header  -->
     <header>
         <div class="container-large">
-            <div class="row">
-                <div class="menu menu-right">
+            <div class="row space-between">
+                <div class="menu menu-right flex">
                     <img class="logo-img" src="./img/logo-small.png" alt="Logo Dropbox">
                     <nav>
-                        <ul>
+                        <ul class="flex">
                             <li><a href="#">Perché Dropbox</a></li>
                             <li><a href="#">Funzioni</a></li>
                             <li><a href="#">Piani e Servizi</a></li>
                         </ul>
                     </nav>
                 </div>
-                <div class="menu menu-left">
+                <div class="menu menu-left flex">
                     <nav>
-                        <ul>
+                        <ul class="flex">
                             <li><a href="#">Supporto</a></li>
                             <li><a href="#">Contatta l'ufficio vendite</a></li>
                             <li><a href="#">Accedi</a></li>
@@ -53,9 +53,9 @@
                     <div class="title-container">
                         <h1>Tutto ciò che ti serve per il lavoro, in un unico posto</h1>
                     </div>
-                    <div class="container-content">
+                    <div class="container-content flex">
                         <div class="col-30">
-                            <div class="text-container-column">
+                            <div class="text-container-column flex-col">
                                 <p>
                                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias nam est praesentium ad ullam quisquam fugiat atque perferendis aperiam distinctio nisi, deleniti facilis aliquid ea error labore consequuntur dolorum, odit voluptate alias voluptas. Esse, rerum aliquam!
                                 </p>
@@ -75,33 +75,33 @@
         </div>
         <!-- / Hero Section  -->
         <!-- Section Box  -->
-        <div class="main-content-container margin-upperspace section-box">
-            <div class="row">
+        <div class="main-content-container margin-upperspace">
+            <div class="row flex-col">
                 <div class="title-container">
                     <h2>Trova il piano business che fa per te</h2>
-                    <div class="input-container">
+                    <div class="input-container flex">
                         <div class="single-input">
-                            <input type="radio" name="Fatturazione annuale" id="fatturazione annuale">
-                            <span class="text-input">Fatturazione annuale</span> 
+                            <input type="radio" name="fatturazione" value="fatturazione annuale" id="fatturazione annuale">
+                            <label class="text-input" for="fatturazione annuale">Fatturazione annuale</label>
                         </div>
                         <div class="single-input">
-                            <input type="radio" name="Fatturazione mensile" id="fatturazione mensile">
-                            <span class="text-input">Fatturazione mensile</span>
+                            <input type="radio" name="fatturazione" value="fatturazione mensile" id="fatturazione mensile">
+                            <label class="text-input" for="fatturazione mensile">Fatturazione mensile</label>
                         </div>
                     </div>
                 </div>
-                <div class="box-container">
+                <div class="box-container flex">
                     <div class="col-33">
                         <div class="box">
                             <div class="category-container">
                                 <i class="fa-solid fa-user"></i> Singolo</div>
-                            <div class="content-box">
+                            <div class="content-box flex-col">
                                 <h3>Professional</h3>
                                 <div class="price-container">
                                     <small class="price"><strong>€ 12,00</strong></small>
                                     <small>/mese</small>
                                 </div>
-                                <ul class="list-icon">
+                                <ul class="list-icon baseline">
                                     <li> 
                                         <i class="fa-solid fa-user"></i>
                                         1 utente
@@ -140,7 +140,7 @@
                         <div class="box">
                             <div class="category-container">
                                 <i class="fa-solid fa-users"></i> Team</div>
-                            <div class="content-box">
+                            <div class="content-box flex-col">
                                 <h3>Advanced</h3>
                                 <div class="price-container">
                                     <small class="price"><strong>€ 18,00</strong></small>
@@ -197,7 +197,7 @@
                         <div class="box">
                             <div class="category-container">
                                 <i class="fa-solid fa-building"></i> Azienda</div>
-                            <div class="content-box">
+                            <div class="content-box flex-col">
                                 <h3>Enterprise</h3>
                                 <div class="price-container">
                                     <small class="price"><strong>Contattaci</strong></small>
@@ -246,8 +246,8 @@
                     <div class="category-container">
                         <i class="fa-solid fa-building"></i> Team
                     </div>
-                        <div class="content-box">
-                            <div class="title-button baseline">
+                        <div class="content-box flex-col">
+                            <div class="baseline space-between">
                                 <h3>Enterprise</h3>
                                 <button class="btn-primary">Contatta l'ufficio vendite</button>
                             </div>
@@ -264,7 +264,7 @@
         <!-- / Section Box  -->
         <!-- Section CTA  -->
         <div class="main-content-container margin-upperspace">
-            <div class="row grid-container">
+            <div class="row grid-container flex">
                 <div class="col-70">
                     <img src="./img/partner.png" alt="Due ragazzi che parlano">
                 </div>
@@ -280,9 +280,9 @@
         <!-- / Section CTA  -->
         <!-- Section Grid  -->
         <div class="main-content-container margin-upperspace">
-            <div class="row grid-container grid-column">
+            <div class="row grid-container flex-col">
                 <h2>Esegui più operazioni con Dropbox Business</h2>
-                <div class="grid-container-img">
+                <div class="grid-container-img flex">
                     <div class="col-33">
                         <img src="./img/business-feature-switching-tools.png" alt="Cambio strumenti">
                         <h3>Passa di meno da uno strumento all'altro</h3>
@@ -299,7 +299,7 @@
                         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Omnis cum saepe enim ipsa, corporis tempore eos rem adipisci voluptatum. Maiores aliquam deserunt beatae vitae quaerat. Quod rerum, obcaecati inventore illum earum eveniet!</p>
                     </div>
                 </div>
-                <div class="grid-container-img">
+                <div class="grid-container-img flex">
                     <div class="col-33">
                         <img src="./img/business-feature-integrations-it.png" alt="Integrazioni">
                         <h3>Passa di meno da uno strumento all'altro</h3>
@@ -331,40 +331,40 @@
         <!-- / Section Claim  -->
         <!-- Section Brand Grid  -->
         <div class="col-100">
-            <div class="row-brand-container"> <!-- Flex--> 
-                <div class="flex-row"><!-- Flex--> 
-                    <div class="box-logo-container left-side-top-left">
+            <div class="flex"> <!-- Flex--> 
+                <div class="flex-row flex-adaptive"><!-- Flex--> 
+                    <div class="box-logo-container flex left-side-top-left">
                         <img class="box-logo" src="./img/designit.svg" alt="Logo Designit">
                     </div>
-                    <div class="box-logo-container left-side-top-right">
+                    <div class="box-logo-container flex left-side-top-right">
                         <img class="box-logo" src="./img/arizona_state_university.svg" alt="Logo Arizona University">
                     </div>
-                    <div class="box-logo-container left-side-bottom-left">
+                    <div class="box-logo-container flex left-side-bottom-left">
                         <img class="box-logo" src="./img/university_of_florida.svg" alt="Logo University of Florida">
                     </div>
-                    <div class="box-logo-container left-side-bottom-right">
+                    <div class="box-logo-container flex left-side-bottom-right">
                         <img class="box-logo" src="./img/topps.svg" alt="Logo Topps">
                     </div>
                 </div>
-                <div class="flex-row central-col">
-                    <div class="text-container-column">
+                <div class="flex-row flex-adaptive central-col">
+                    <div class="text-container-column flex-col">
                         <img class="center-brand" src="./img/designit.svg" alt="">
                         <hr>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis cupiditate ipsum voluptatum corporis corrupti aspernatur quis earum dolor cumque dicta in possimus, error iure voluptatibus enim harum voluptas obcaecati suscipit rerum perspiciatis ad vitae a! Quaerat laboriosam cupiditate similique.</p>
                         <figcaption>Morten thomsen, global IT Lead</figcaption>
                     </div>
                 </div>
-                <div class="flex-row"><!-- Flex--> 
-                    <div class="box-logo-container right-side-top-left">
+                <div class="flex-row flex-adaptive"><!-- Flex--> 
+                    <div class="box-logo-container flex right-side-top-left">
                         <img class="box-logo" src="./img/world_bicycle_relief.svg" alt="Logo World Bicycle relief">
                     </div>
-                    <div class="box-logo-container right-side-top-right">
+                    <div class="box-logo-container flex right-side-top-right">
                         <img class="box-logo" src="./img/hearst_corp.svg" alt="Logo Hearst">
                     </div>
-                    <div class="box-logo-container right-side-bottom-left">
+                    <div class="box-logo-container flex right-side-bottom-left">
                         <img class="box-logo" src="./img/lonely_planet.svg" alt="Logo Lonely Planet">
                     </div>
-                    <div class="box-logo-container right-side-bottom-right">
+                    <div class="box-logo-container flex right-side-bottom-right">
                         <img class="box-logo" src="./img/clear_channel.svg" alt="Logo Clear Channel Outdoor">
                     </div>
                 </div>
@@ -392,33 +392,45 @@
                     <h2>Domande frequenti</h2>
                 </div>
                 <div class="col-100">
-                    <div class="accordion space-between">
-                       <div class="text-accordion">
-                        <h4>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</h4>
-                       </div>
-                       <div class="icon-accordion">
-                        <i class="fa-solid fa-angle-down"></i>
-                       </div>
-                       <div class="content-accordion-container">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero totam dignissimos error, cupiditate incidunt ex consequatur reprehenderit eos, odio minima ipsum vel explicabo saepe tempore placeat excepturi architecto delectus facere eligendi! Ipsa iusto dolorem mollitia voluptatum, aut hic ad nisi impedit minima repellat vitae autem. Libero recusandae laboriosam enim amet?</p>
-                       </div>
+                    <div class="accordion">
+                        <div class="title-container space-between">
+                            <div class="text-accordion">
+                                <h4>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</h4>
+                            </div>
+                            <div class="icon-accordion">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
+                        </div>
+                        <div class="content-accordion-container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero totam dignissimos error, cupiditate incidunt ex consequatur reprehenderit eos, odio minima ipsum vel explicabo saepe tempore placeat excepturi architecto delectus facere eligendi! Ipsa iusto dolorem mollitia voluptatum, aut hic ad nisi impedit minima repellat vitae autem. Libero recusandae laboriosam enim amet?</p>
+                        </div>
                     </div>
-                    <div class="accordion space-between">
-                        <div class="text-accordion">
-                         <h4>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</h4>
+                    <div class="accordion">
+                        <div class="title-container space-between">
+                            <div class="text-accordion">
+                                <h4>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</h4>
+                            </div>
+                            <div class="icon-accordion">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
                         </div>
-                        <div class="icon-accordion">
-                         <i class="fa-solid fa-angle-down"></i>
+                        <div class="content-accordion-container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero totam dignissimos error, cupiditate incidunt ex consequatur reprehenderit eos, odio minima ipsum vel explicabo saepe tempore placeat excepturi architecto delectus facere eligendi! Ipsa iusto dolorem mollitia voluptatum, aut hic ad nisi impedit minima repellat vitae autem. Libero recusandae laboriosam enim amet?</p>
                         </div>
-                     </div>
-                     <div class="accordion space-between">
-                        <div class="text-accordion">
-                         <h4>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</h4>
+                    </div>
+                    <div class="accordion">
+                        <div class="title-container space-between">
+                            <div class="text-accordion">
+                                <h4>Qual è la differenza tra Dropbox Business Standard e Dropbox Business Advanced</h4>
+                            </div>
+                            <div class="icon-accordion">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </div>
                         </div>
-                        <div class="icon-accordion">
-                         <i class="fa-solid fa-angle-down"></i>
+                        <div class="content-accordion-container">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero totam dignissimos error, cupiditate incidunt ex consequatur reprehenderit eos, odio minima ipsum vel explicabo saepe tempore placeat excepturi architecto delectus facere eligendi! Ipsa iusto dolorem mollitia voluptatum, aut hic ad nisi impedit minima repellat vitae autem. Libero recusandae laboriosam enim amet?</p>
                         </div>
-                     </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -480,6 +492,7 @@
                 </div>
             </div>
         </div>
+        <!-- Second Footer  -->
         <div class="container-medium">
             <div class="row col-10 padding-small-footer border-up-footer">
                 <i class="fa-solid fa-earth-americas icon-footer"></i>

@@ -21,12 +21,14 @@ body {
     background-color: #fff;
     font-size: 14px;
     font-weight: 300;
+    overflow-x: hidden;
 }
 
 hr {
     width: 20%;
     color: #ddd;
 }
+
 /*-------------------
         LAYOUT
 ---------------------*/
@@ -110,6 +112,37 @@ hr {
     width: 100%;
 } 
 
+/*-------------------
+        FLEX LAYOUT
+---------------------*/
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-adaptive {
+    width: calc(100vw / 3);
+    height: 33vw;
+}
+
+.space-between {
+    display: flex;
+    justify-content: space-between;
+}
+
+.baseline {
+    align-items: baseline;
+}
 
 /*-------------------
         TYPOGRAPHY
@@ -181,6 +214,12 @@ ul li {
     cursor: pointer;
 }
 
+.btn-primary:hover {
+    color: #4f4f4f;
+    border: 1px solid #4f4f4f;
+    background-color: transparent;
+}
+
 .btn-small {
     font-size: 12px;
     font-weight: 300;
@@ -189,6 +228,12 @@ ul li {
     border: 1px solid #0061ff;
     background-color: #0061ff;
     cursor: pointer;
+}
+
+.btn-small:hover {
+    color: #4f4f4f;
+    border: 1px solid #4f4f4f;
+    background-color: transparent;
 }
 
 .btn-secondary {
@@ -201,10 +246,22 @@ ul li {
     cursor: pointer;
 }
 
+.btn-secondary:hover {
+    color: #fff;
+    border: 1px solid #0061ff;
+    background-color: #0061ff;
+}
+
 .btn-primary-variant {
     color: #000;
     border: 1px solid #fff;
     background-color: #fff;
+}
+
+.btn-primary-variant:hover {
+    color: #fff;
+    border: 1px solid #0061ff;
+    background-color: #0061ff;
 }
 
 /*-------------------
@@ -214,19 +271,16 @@ ul li {
 header {
     background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-}
-
-.container-large .row {
-    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
 
 .menu {
-    display: flex;
     align-items: center;
 }
 
 .menu nav ul {
-    display: flex;
     list-style: none;
 }
 
@@ -234,12 +288,16 @@ header {
     color: #000;
 }
 
+li:hover  a {
+    color: #0061ff;
+}
+
 .menu nav ul li {
     padding: 20px 15px;
 }
 
 .menu nav ul li a:hover {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #0061ff;
     padding-bottom: 18px;
 }
 
@@ -257,12 +315,9 @@ header {
 
 .container-content {
     width: 100%;
-    display: flex;
 }
 
 .text-container-column {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
     gap: 25px;
 }
@@ -284,13 +339,8 @@ header {
         CONTENT
 ---------------------*/
 
-.section-box .row {
-    flex-direction: column;
-}
-
 .input-container {
     padding-bottom: 40px;
-    display: flex;
     gap: 40px;
 }
 
@@ -309,7 +359,6 @@ header {
 ---------------------*/
 
 .box-container {
-    display: flex;
     align-items: stretch;
     gap: 20px;
     margin-bottom: 50px;
@@ -326,8 +375,6 @@ header {
 }
 
 .content-box {
-    display: flex;
-    flex-direction: column;
     padding: 25px 25px 0 25px;
     align-content: flex-start;
 }
@@ -366,11 +413,6 @@ small {
     color: #0061ff;
 }
 
-.title-button {
-    display: flex;
-    justify-content: space-between;
-}
-
 .text-large-box {
     min-height: 50px;
 }
@@ -380,7 +422,6 @@ small {
 ---------------------*/
 
 .grid-container {
-    display: flex;
     flex-wrap: nowrap;
     gap: 30px;
 }
@@ -394,40 +435,14 @@ small {
 ---------------------*/
 
 .grid-container-img {
-    display: flex;
     gap: 30px;
-}
-
-.grid-column {
-    flex-direction: column;
-}
-
-/*-------------------
-        FLEX LAYOUT
----------------------*/
-
-.flex-col {
-    display: flex;
-    flex-direction: column;
-}
-
-.flex-row {
-    display: flex;
-    flex-wrap: wrap;
-    width: calc(100vw / 3);
-    height: 33vw;
 }
 
 /*-------------------
         BRAND GRID
 ---------------------*/
 
-.row-brand-container {
-    display: flex;
-}
-
 .box-logo-container {
-    display: flex;
     width: 50%;
     height: 50%;
     align-items: center;
@@ -437,6 +452,10 @@ small {
 .box-logo {
     width: 6vw;
     filter: invert(100%);
+}
+
+.box-logo-container:hover .box-logo {
+    filter: none;
 }
 
 .central-col {
@@ -513,15 +532,6 @@ figcaption {
     padding: 100px 0 60px 0;
 }
 
-.space-between {
-    display: flex;
-    justify-content: space-between;
-}
-
-.baseline {
-    align-items: baseline;
-}
-
 /*-------------------
         FAQ
 ---------------------*/
@@ -538,8 +548,21 @@ figcaption {
 
 .fa-angle-down {
     font-size: 12px;
+    transition: transform 0.3s ease;
 }
 
+.content-accordion-container {
+    padding: 20px 0 0 0;
+    display: none;
+}
+
+.accordion:hover .content-accordion-container {
+    display: block;
+}
+
+.accordion:hover .fa-angle-down {
+    transform: rotate(180deg);
+}
 
 /*-------------------
         FOOTER
@@ -548,6 +571,7 @@ figcaption {
 footer {
     background-color: #000;
 }
+
 .icon-footer {
     color: #999;
     font-size: 10px;
@@ -555,6 +579,10 @@ footer {
 
 .language-text {
     color: #999;
+}
+
+.padding-small-footer:hover .icon-footer, .padding-small-footer:hover .language-text {
+    color: #fff;
 }
 
 .padding-small-footer {
